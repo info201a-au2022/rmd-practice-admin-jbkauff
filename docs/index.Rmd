@@ -6,17 +6,19 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-source("../source/analysis.R")
+source("C:/Users/jbkka/Documents/info201/assignments/X10/rmd-practice-admin-jbkauff/source/analysis.R")
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Covid Report
-I write a paragraph here. I will highlight that the total number of US cases is `r get_total_cases()`. And, the total number of US deaths is `r get_total_deaths()`. 
-
+Within the analysis.R file, I examined a data set pertaining to the NYT COVID-19 data on a national scale. Within this data set, I used the 'get_total_cases()' function and  found that the total number of US cases is 97,654,808. I used the 'get_total_deaths()' function to find that the total number of US deaths is 1,069,792.
+ 
 (**Note**: Why are there no commas in the *total number of US deaths* ? Can you change `analysis.R` file so that the number is commented with commas?)
+There is no commas in the *total number of US deaths* because in the original function, it did not utilize the 'prettyNum()' function to create commas that separate the integers. The change is reflected on the 'analysis.R' file.
 
 I also want to show the chart:
 ``` {r echo=FALSE}
 cases_plot
 ```
+
 
